@@ -1,0 +1,16 @@
+/* FORMAS DE ESTILIZAR OS ELEMENTOS (Baseado em Hierarquia) 
+    1. CSS in Line:prioridade de estilização, muda apenas os elementos da linha
+    EX. <h1 style=color:"red" font-size="70px">
+
+    2.Criando uma tag dentro do <head>
+    Ex. <head>
+            <style>
+                h1{
+                    color:red;
+                    font-size:70px;
+                }
+            </style>
+        </head>
+    
+    3. Criando um arquivo.css (usado profissionalmente)
+*/
