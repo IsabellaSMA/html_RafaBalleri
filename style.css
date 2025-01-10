@@ -20,7 +20,7 @@
 * /* dessa forma, as margens de todos os elementos são zeradas*/
 {
     margin: 0;
-    padding: 0;
+    padding: 0; /*espaçamento */
     box-sizing: border-box; /*o border engloba apenas o margim e o padding*/
 } 
 
@@ -45,7 +45,7 @@ h2
 
  header
  {
-    padding: 2rem; /*Unidade de medida relativa, isso se adequa ao que o usuario definir*/
+    padding: 2rem; /* REM= Unidade de medida relativa, isso se adequa ao que o usuario definir*/
     background-color: #693c2d;
     text-align: center; /*centraliza o título*/
 }
@@ -100,5 +100,112 @@ select
 img
 {
     width: 15rem;
-    
 }
+
+table
+{
+    width: 100%;
+    border-collapse:collapse; /*deixa a borda normal, sem todas aquelas divisórias anteriores*/
+}
+
+th
+{
+    background-color: #865341; /*fundo para o cabeçalho da tabela*/
+    padding: 0.2rem;
+}
+
+td
+{
+    color: #3d0e0e;
+    padding: 0.6rem;
+    text-align:center;
+}
+
+ tfoot td /*edita a quarta linha (boa sorte na próxima) */
+{
+    background-color:#865341 ;
+}
+
+/*estilizar lista de respostas*/
+details
+{
+    background-color: #d1a1a1;
+    border-radius: 5px;
+    padding: 0.6rem;
+}
+
+summary
+{
+    color:#3d0e0e;
+    margin:0.5rem;
+    cursor:pointer;
+}
+
+ol /*Coloca a lista dentro da borda do details*/
+{
+    margin-left: 5rem;
+}
+
+ol li /*a lista é descendente de ol */
+{
+    padding: 0.2rem;
+}
+
+fieldset /*borda do informações de contato */ 
+{
+    border: 2px solid #d1a1a1;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+legend /*o informações de contato*/
+{
+    color:#693c2d;
+    padding: 0 0.5;
+}
+
+textarea /*area do comentários*/
+{
+    outline:none;
+    border-radius:5px;
+    border: 2px solid #865341
+}
+
+button
+{
+    border:none;
+    padding: 0.5rem;
+    background-color: #e9c1e4;
+    border: 2px solid #865341;
+    font-family: "Comfortaa",serif;
+    border-radius: 5px;
+}
+
+/*Para editar o footer que é um parágrafo, trabalha-se com classes. Logo, fazer:
+<p class="paragrafo-footer"> 
+
+Pode usar a classe para mais de um elemento
+
+O ID serve apenas para estilizar uma vez, não pode ser igual a outra coisa
+*/
+
+footer
+{
+    background-color: #693c2d;
+    padding:2rem;
+    text-align:center;
+}
+
+.paragrafo-footer
+{
+    font-family: "Comfortaa",serif;
+    color:#3d0e0e;
+}
+
+a /*tag ancora, a que ao clicar, o usuari é levado para outra página*/
+{
+    text-decoration: none; /*tira o sublinhado do "clique aqui"*/
+    color:#fdc1f8
+}
+
+/*Desafio: estilizar a pagina quizzes, dica: pode fazer outro aquivo css e linkar ele no de quizzes,*/
