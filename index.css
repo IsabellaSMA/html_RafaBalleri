@@ -69,7 +69,7 @@ section /*Ajusta o espaçamento entre uma pergunta e outra*/
 
 input[type="radio"],[type="checkbox"]{ 
     accent-color: #fdc1f8; /*modifica a cor de dentro das bolinhas*/
-} 
+}
 
 input[type="text"], input[type="password"],input[type="date"], input[type="email"]
 {
@@ -79,7 +79,7 @@ input[type="text"], input[type="password"],input[type="date"], input[type="email
     outline: none; /*serve para questões de acessibilidade, porém esteticamente pode ser desabilitado*/
     border-radius: 5px; /*arredonda a borda do espaço de responder*/
 }
-/*Esrilizar pseudo elementos*/
+/*Estilizar pseudo elementos*/
 
 /*Estilizar placeholder*/
 input ::placeholder
@@ -90,16 +90,26 @@ input ::placeholder
 select
 {
     cursor: pointer; /*quando o mouse passa por cima da caixa de seleção, muda o ícone para o icone de apontar o dedo*/
-    color: #693c2d;
+    color: #030100;
     border: 2px solid #e9c1e4;
     border-radius: 5px;
     outline: none;
-
+    width: 9rem;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Comfortaa",serif;
 }
 
 img
 {
     width: 15rem;
+    display: block;
+    margin: auto; /*coloca a img no centro*/
+}
+
+figcaption{ /*coloca  a legenda no centro*/
+    text-align: center;
 }
 
 table
@@ -136,6 +146,7 @@ details
 
 summary
 {
+    text-align: center;
     color:#3d0e0e;
     margin:0.5rem;
     cursor:pointer;
@@ -209,3 +220,41 @@ a /*tag ancora, a que ao clicar, o usuari é levado para outra página*/
 }
 
 /*Desafio: estilizar a pagina quizzes, dica: pode fazer outro aquivo css e linkar ele no de quizzes,*/
+
+/*Estilização do botão de selecionar arquivos*/
+
+/* Contêiner para o input de arquivo e o rótulo (label) */
+.file-upload-wrapper {
+    position: relative;/* Permite que elementos dentro deste contêiner sejam posicionados absolutamente */
+    display: inline-block; /* Faz com que o contêiner ocupe apenas o espaço necessário */
+}
+
+/* Estilos para o input de arquivo */
+.file-upload {
+    position: absolute;/* Posiciona o input de arquivo em relação ao contêiner pai */
+    left: 0;/* Alinha o input à esquerda do contêiner pai */
+    top: 0;/* Alinha o input ao topo do contêiner pai */
+    opacity: 0;/* Torna o input de arquivo invisível */
+    width: 100%;/* Faz com que o input ocupe 100% da largura do contêiner pai */
+    height: 100%;/* Faz com que o input ocupe 100% da altura do contêiner pai */
+    cursor: pointer;
+}
+
+/* Estilos para o rótulo (label) do input de arquivo */
+.file-upload-label {
+    display: inline-block;/* Faz com que o rótulo ocupe apenas o espaço necessário */
+    padding: 0.3rem 1rem; /* Adiciona espaçamento interno ao rótulo */
+    border: 2px solid #e9c1e4;/* Define a cor e a espessura da borda do rótulo */
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;/* Adiciona uma transição suave para mudanças de cor */ 
+}
+
+/* Estilos para o rótulo quando o usuário passa o mouse sobre ele */
+.file-upload-label:hover {
+    background-color: #e9c1e4; /* Muda a cor de fundo ao passar o mouse */
+    color: #fff;/* Muda a cor do texto ao passar o mouse */
+    border-color: #000; /*Muda a cor da borda ao passar o mouse*/
+}

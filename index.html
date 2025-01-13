@@ -77,11 +77,14 @@
             </section>
         
             <!--PERGUNTA 6: INPUT DE ARQUIVOS-->
-            <section>
-                <h2>Pergunta 6: Faça o Upload de um arquivo contendo código HTML:</h2>
-                <form>
-                    <input type="file" id="p6" name="pergunta6">
-                </form>
+            <section> <!--Vou estilizar o botão de selecionar arquivo. Ajudado por IA-->
+                <h2>Pergunta 6: Faça o Upload de um arquivo contendo código HTML:</h2> 
+                <form> 
+                    <div class="file-upload-wrapper"> 
+                        <input type="file" id="p6" name="pergunta6" class="file-upload"/>
+                         <label for="p6" class="file-upload-label">Escolher arquivo</label> 
+                    </div>
+                </form> 
             </section>
             
             <!--PERGUNTA 7: Menu suspenso: o menu que mostra mais opções de algo-->
@@ -89,7 +92,7 @@
                 <h2>Pergunta 7: Selecione o atributo do input que define o seu tipo: </h2>
                 <form>
                     <select name="pergunta7" id="p7">
-                        <option value=""> Escolha..</option> <!--<option value="" disabled selected> Escolha..</option> deixa essa opção não selecionável-->
+                        <option value="" disabled selected> Escolha..</option> <!--<option value="" disabled selected> Escolha..</option> deixa essa opção não selecionável-->
                         <option value="id">id</option>
                         <option value="placeholder">placeholder</option>
                         <option value="type">type</option>
