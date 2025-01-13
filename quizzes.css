@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Comfortaa:wght@300..700&display=swap');
+
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+} 
+
+body
+{
+   background-image:url(assets/glitter.jpg);/*Nova funcionalidade: adicionei uma imagem de fundo na página porém a image está repetindo*/
+   background-color: blueviolet;
+   font-family:"Comfortaa", serif;   
+}
+
+h1
+{
+    font-family: 'Cabin',serif;
+}
+header
+{
+    background-color: #ffffff;
+    padding:0.9rem;
+    text-align:center;
+    border: 2px solid rgb(253, 157, 210);
+}
+
+
+main /*ajustar o espaço entre os elementos*/
+{
+    padding: 1.5rem;
+    display:flex; /*usar um tal de flexbox*/
+    flex-direction:column; /*organiza em coluna*/
+    gap:1.5rem; /*define o espaçamento entre os "filhos", os outros itens*/
+}
+
+img /*quero centralizar a imagem*/
+{
+    width: 20rem;
+}
+
+footer
+{
+    background-color: #ffffff;
+    padding:2rem;
+    text-align:center;
+}
