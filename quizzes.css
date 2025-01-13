@@ -12,7 +12,6 @@
 body
 {
    background-image:url(assets/glitter.jpg);/*Nova funcionalidade: adicionei uma imagem de fundo na página porém a image está repetindo*/
-   background-color: blueviolet;
    font-family:"Comfortaa", serif;   
 }
 
@@ -25,7 +24,7 @@ header
     background-color: #ffffff;
     padding:0.9rem;
     text-align:center;
-    border: 2px solid rgb(253, 157, 210);
+    border-bottom: 3px solid rgb(252, 165, 212); /*Nova funcionalidade descoberta: borda apenas em baixo*/
 }
 
 
@@ -34,17 +33,29 @@ main /*ajustar o espaço entre os elementos*/
     padding: 1.5rem;
     display:flex; /*usar um tal de flexbox*/
     flex-direction:column; /*organiza em coluna*/
-    gap:1.5rem; /*define o espaçamento entre os "filhos", os outros itens*/
+    gap:2rem; /*define o espaçamento entre os "filhos", os outros itens*/
 }
 
-img /*quero centralizar a imagem*/
+img 
 {
-    width: 20rem;
-}
+    width: 20rem; 
+   /*display: block;
+   margin: 0px auto; Assim deixa as imagens no centro */ 
+   cursor: pointer; 
+} 
 
 footer
 {
     background-color: #ffffff;
     padding:2rem;
     text-align:center;
+}
+
+summary
+{
+    color:#690464;
+    margin:1rem;
+    cursor:pointer;
+    font-size: 22px;
+    
 }
