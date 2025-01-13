@@ -1,61 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Comfortaa:wght@300..700&display=swap');
 
-
-* 
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 } 
 
-body
-{
-   background-image:url(assets/glitter.jpg);/*Nova funcionalidade: adicionei uma imagem de fundo na página porém a image está repetindo*/
-   font-family:"Comfortaa", serif;   
+body {
+text-align: center;
+   background-image: url(assets/glitter.jpg);
+   background-size: cover; /* Faz a imagem cobrir toda a área disponível */ 
+   background-repeat: no-repeat; /* Impede que a imagem se repita */ background-position: center center; /* Centraliza a imagem de fundo */
+   font-family: "Comfortaa", serif;   
 }
 
-h1
-{
-    font-family: 'Cabin',serif;
+h1 {
+    font-family: 'Cabin', serif;
 }
-header
-{
+
+h2{
+    color: black;
+}
+header {
     background-color: #ffffff;
-    padding:0.9rem;
-    text-align:center;
-    border-bottom: 3px solid rgb(252, 165, 212); /*Nova funcionalidade descoberta: borda apenas em baixo*/
+    padding: 0.9rem;
+    text-align: center;
+    border-bottom: 3px solid rgb(252, 165, 212);
 }
 
-
-main /*ajustar o espaço entre os elementos*/
-{
+main {
     padding: 1.5rem;
-    display:flex; /*usar um tal de flexbox*/
-    flex-direction:column; /*organiza em coluna*/
-    gap:2rem; /*define o espaçamento entre os "filhos", os outros itens*/
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-img 
-{
-    width: 20rem; 
-   /*display: block;
-   margin: 0px auto; Assim deixa as imagens no centro */ 
-   cursor: pointer; 
+img {
+    width: 20rem;
 } 
 
-footer
-{
+footer {
     background-color: #ffffff;
-    padding:2rem;
-    text-align:center;
+    padding: 2rem;
+    text-align: center;
 }
 
-summary
-{
-    color:#690464;
-    margin:1rem;
-    cursor:pointer;
+summary {
+    color: #690464;
+    margin: 1rem;
+    cursor: pointer;
     font-size: 22px;
-    
+}
+
+details {
+    display: inline-block;
+    width: fit-content;
+}
+
+a{
+    text-decoration:none;
+    color: rgb(218, 84, 128);
 }
